@@ -9,11 +9,10 @@ namespace VendorAndOrderTracker.Tests
 
   {
     [TestMethod]
-    public void TestName_TestIsDoing_Returns()
+    public void VendorConstructor_CreatesVendorInstance_Vencor()
     {
-      //Assemble
-      //Act
-      //Assert
+      Vendor testVendor = new Vendor();
+      Assert.AreEqual(typeof(Vendor), testVendor.GetType());
     }
   }
 }    
