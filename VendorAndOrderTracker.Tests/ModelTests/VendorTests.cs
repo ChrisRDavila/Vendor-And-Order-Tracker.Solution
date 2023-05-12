@@ -17,5 +17,16 @@ namespace VendorAndOrderTracker.Tests
       Vendor testVendor = new Vendor(testName, testDescribe, testAddress);
       Assert.AreEqual(typeof(Vendor), testVendor.GetType());
     }
+
+    // [TestMethod]
+    // public void GetProperties_GetsOrderProperties_StringAndInt()
+    // {
+    //   string testName = "Donnies";
+    //   string testDescribe = "Downtown Locaation";
+    //   string testAddress = "2037 N First Ave";
+    //   Vendor testVendor = new Vendor(testName, testDescribe, testAddress);
+    //   string resultName = 
+    //   Assert.AreEqual(typeof(Vendor), testVendor.GetType());
+    // }
   }
 }    
