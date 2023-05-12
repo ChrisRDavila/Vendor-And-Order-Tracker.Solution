@@ -15,6 +15,19 @@ namespace VendorAndOrderTracker.Controllers
       return View(allVendors);
     }
 
-    
+    [HttpGet("/vendors/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
+
+    [HttpPost("/categories")]
+    public ActionResult Create(string vendorName, string vendorDescribe, string vendorAddress)
+    {
+      Vendor newVendor = new Vendor(vendorName, vendorDescribe, vendorAddress);
+      return RedirectToAction("Index");
+    }
+
+
   }
 }    
