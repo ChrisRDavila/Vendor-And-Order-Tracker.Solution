@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using VendorAndOrderTracker.Models;
 
-namespace ProjectName.Controllers
+namespace VendorAndOrderTracker.Controllers
 {
   public class HomeController : Controller
   {
