@@ -34,5 +34,28 @@ namespace VendorAndOrderTracker.Tests
       Assert.AreEqual(describeTest, resultDescribe);
       Assert.AreEqual(addressTest, resultAddress);
     }
+
+    [TestMethod]
+    public void SetVendorProperties_SetsVendorProperties_Strings()
+    {
+      string nameTest = "Donnies";
+      string describeTest = "Downtown Location";
+      string addressTest = "2037 N First Ave";
+      
+      Vendor testVendor = new Vendor(nameTest, describeTest, addressTest);
+      string updatedName = "Cool Cafe";
+      string updatedDescribe = "small cart business";
+      string updatedAddress = "1234 Main";
+      testVendor.Name = updatedName;
+      testVendor.Describe = updatedDescribe;
+      testVendor.Address = updatedAddress;
+      string resultName = testVendor.Name;
+      string resultDescribe = testVendor.Describe;
+      string resultAddress = testVendor.Address;
+      
+      Assert.AreEqual(updatedName, resultName);
+      Assert.AreEqual(updatedDescribe, resultDescribe);
+      Assert.AreEqual(updatedAddress, resultAddress);
+    }
   }
 }    
