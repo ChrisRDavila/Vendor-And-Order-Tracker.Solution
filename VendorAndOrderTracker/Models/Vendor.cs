@@ -34,6 +34,11 @@ namespace VendorAndOrderTracker.Models
       return _instancesVen;
     }
 
+    public static Vendor Find(int searchId)
+    {
+      return _instancesVen[searchId-1];
+    }
+
 
 
 
