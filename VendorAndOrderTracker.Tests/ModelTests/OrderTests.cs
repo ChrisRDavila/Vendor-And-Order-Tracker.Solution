@@ -1,14 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VendorAndOrderTracker.Models;
 using System.Collections.Generic;
+using System;
 
 
 namespace VendorAndOrderTracker.Tests
 {
   [TestClass]
-  public class OrderTests
+  public class OrderTests : IDisposable
 
   {
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
     [TestMethod]
     public void OrderConstructor_CreateInstanceOfOrder_Order()
     {
