@@ -2,6 +2,6 @@ namespace VendorAndOrderTracker.Models
 {
   public class Order
   {
-    //Bus
+    public string Title;
   }
 }
