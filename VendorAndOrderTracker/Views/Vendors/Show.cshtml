@@ -12,12 +12,16 @@
   <body>
     @using VendorAndOrderTracker.Models;
 
-    <h3>Here are all the orders for this vendor:</h3>
+    <h3>vendor:</h3> 
+    <h2>@Model["vendor"].Name</h2>
+    <h2>@Model["vendor"].Describe</h2>
+    <h2>@Model["vendor"].Address</h2>
 
+    <p>here are the orders for this vendor:
     <ol>
     @foreach (Order order in @Model["orders"])
     {
-      <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.Description</a></li>
+      <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.Title</a></li>
     }
     </ol>
 
