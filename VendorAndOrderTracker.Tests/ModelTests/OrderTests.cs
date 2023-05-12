@@ -84,7 +84,5 @@ namespace VendorAndOrderTracker.Tests
       // Assert
       CollectionAssert.AreEqual(newList, result);
     }
-
-
   }
 }    
