@@ -126,7 +126,7 @@ namespace VendorAndOrderTracker.Tests
       string descriptionTest = "3 loaves, 4 croissants";
       int priceTest = 7;
       string dateTest = "Mar 3, 2023";
-      Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest)
+      Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
       List<Order> newList = new List<Order> { testOrder };
       string testname = "Cool Cafe";
       string testDescribe = "small cart business";
@@ -135,9 +135,10 @@ namespace VendorAndOrderTracker.Tests
       newVendor.AddOrder(testOrder);
 
       //Act
-      List<Order> result = newVender.Order;
+      List<Order> result = newVendor.Orders;
 
       //Assert
       CollectionAssert.AreEqual(newList, result);
+    }  
   }
 }    
