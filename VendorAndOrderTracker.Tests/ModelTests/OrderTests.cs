@@ -84,5 +84,28 @@ namespace VendorAndOrderTracker.Tests
       // Assert
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetAllLists_ReturnsAllList_OrderList()
+    {
+      // Arrange
+      string title01 = "Weekly Order from Anne";
+      string description01 = "3 loaves, 4 croissants";
+      int price01 = 7;
+      string date01 = "Mar 3, 2023";
+      string title02 = "monthly Order from Al";
+      string description02 = "4 loaves, 5 croissants";
+      int price02 = 9;
+      string date02 = "May 7, 2023";
+      Order newOrder1 = new Order(title01, description01, price01, date01);
+      Order newOrder2 = new Order(title02, description02, price02, date02);
+      List<Order> newList = new List<Order> {newOrder1, newOrder2 };
+
+      // Act
+      List<Order> result = Order.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }    
