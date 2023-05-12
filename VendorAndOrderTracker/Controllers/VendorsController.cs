@@ -14,5 +14,7 @@ namespace VendorAndOrderTracker.Controllers
       List<Vendor> allVendors = Vendor.GetAll();
       return View(allVendors);
     }
+
+    
   }
 }    
