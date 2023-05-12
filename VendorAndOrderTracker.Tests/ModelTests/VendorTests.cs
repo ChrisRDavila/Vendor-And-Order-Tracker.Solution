@@ -11,7 +11,10 @@ namespace VendorAndOrderTracker.Tests
     [TestMethod]
     public void VendorConstructor_CreatesVendorInstance_Vencor()
     {
-      Vendor testVendor = new Vendor();
+      string testName = "Donnies";
+      string testDescribe = "Downtown Locaation";
+      string testAddress = "2037 N First Ave";
+      Vendor testVendor = new Vendor(testName, testDescribe, testAddress);
       Assert.AreEqual(typeof(Vendor), testVendor.GetType());
     }
   }
