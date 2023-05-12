@@ -107,5 +107,20 @@ namespace VendorAndOrderTracker.Tests
       // Assert
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetOrderId_ReturnsOrderId_Int()
+    {
+    //Arrange
+    string titleTest = "Weekly Order from Anne";
+      string descriptionTest = "3 loaves, 4 croissants";
+      int priceTest = 7;
+      string dateTest = "Mar 3, 2023";
+      Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
+
+      int result = testOrder.OrderId;
+
+      Assert.AreEqual(1, result);
+    }
   }
 }    
