@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pierre's Vendor and Order Tracker</title>
-    <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-      rel="stylesheet" 
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
-      crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Add a new order to @Model.Name</h1>
+@{
+  Layout = "_Layout";
+}
 
-    <form action="/vendors/@Model.VendorId/orders" method="post">
-      <input id="vendorId" name="vendorId" type="hidden" value="@Model.VendorId">
-      <label for="orderTitle">Order Title</label>
-      <input id="orderTitle" name="orderTitle" type="text"><br>
-      <label for="orderDescription">Description</label>
-      <input id="orderDescription" name="orderDescription" type="text"><br>
-      <label for="">Order Price</label>
-      <input id="orderPrice" name="orderPrice" type="number"><br>
-      <label for="orderDate">Order Date</label>
-      <input id="orderDate" name="orderDate" type="text"><br>
-      <button type='submit'>Add Order</button>
-    </form>
-  </body>
-</html>
+<h1>Add a new order to @Model.Name</h1>
+
+<form action="/vendors/@Model.VendorId/orders" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.VendorId">
+  <label for="orderTitle">Order Title</label>
+  <input id="orderTitle" name="orderTitle" type="text"><br>
+  <label for="orderDescription">Description</label>
+  <input id="orderDescription" name="orderDescription" type="text"><br>
+  <label for="">Order Price</label>
+  <input id="orderPrice" name="orderPrice" type="number"><br>
+  <label for="orderDate">Order Date</label>
+  <input id="orderDate" name="orderDate" type="text"><br>
+  <button type='submit'>Add Order</button>
+</form>
