@@ -1,0 +1,42 @@
+.container {
+  margin: 5px;
+  color: rgb(68, 160, 160);
+  background-color: antiquewhite;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  bottom: 0;
+}
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+body {
+  background-image: url('./bakery.jpeg');
+  color: rgb(95, 39, 237);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  align-items: left;
+  position: relative;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 150%;
+  border: 10px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 75%;
+}
+button {
+  color: red;
+}
