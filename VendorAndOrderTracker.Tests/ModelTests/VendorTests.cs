@@ -124,7 +124,7 @@ namespace VendorAndOrderTracker.Tests
       //Arrange
       string titleTest = "Weekly Order from Anne";
       string descriptionTest = "3 loaves, 4 croissants";
-      int priceTest = 7;
+      decimal priceTest = 7;
       string dateTest = "Mar 3, 2023";
       Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
       List<Order> newList = new List<Order> { testOrder };

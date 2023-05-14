@@ -19,7 +19,7 @@ namespace VendorAndOrderTracker.Tests
     {
       string titleTest = "Weekly Order from Anne";
       string descriptionTest = "3 loaves, 4 croissants";
-      int priceTest = 7;
+      decimal priceTest = 7;
       string dateTest = "Mar 3, 2023";
       Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
       Assert.AreEqual(typeof(Order), testOrder.GetType());
@@ -30,13 +30,13 @@ namespace VendorAndOrderTracker.Tests
     {
       string titleTest = "Weekly Order from Anne";
       string descriptionTest = "3 loaves, 4 croissants";
-      int priceTest = 7;
+      decimal priceTest = 7;
       string dateTest = "Mar 3, 2023";
       
       Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
       string resultTitle = testOrder.Title;
       string resultDescription = testOrder.Description;
-      int resultPrice = testOrder.Price;
+      decimal resultPrice = testOrder.Price;
       string resultDate = testOrder.Date;
       
       Assert.AreEqual(titleTest, resultTitle);
@@ -50,13 +50,13 @@ namespace VendorAndOrderTracker.Tests
     {
       string titleTest = "Weekly Order from Anne";
       string descriptionTest = "3 loaves, 4 croissants";
-      int priceTest = 7;
+      decimal priceTest = 7;
       string dateTest = "Mar 3, 2023";
       
       Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
       string updatedTitle = "Bimonthly order from Freds";
       string updatedDescription = "4 loaves, 2 croissants";
-      int updatedPrice = 9;
+      decimal updatedPrice = 9;
       string updatedDate = "Feb 9, 2003";
       testOrder.Title = updatedTitle;
       testOrder.Description = updatedDescription;
@@ -64,7 +64,7 @@ namespace VendorAndOrderTracker.Tests
       testOrder.Date = updatedDate;
       string resultTitle = testOrder.Title;
       string resultDescription = testOrder.Description;
-      int resultPrice = testOrder.Price;
+      decimal resultPrice = testOrder.Price;
       string resultDate = testOrder.Date;
       
       Assert.AreEqual(updatedTitle, resultTitle);
@@ -91,11 +91,11 @@ namespace VendorAndOrderTracker.Tests
       // Arrange
       string title01 = "Weekly Order from Anne";
       string description01 = "3 loaves, 4 croissants";
-      int price01 = 7;
+      decimal price01 = 7;
       string date01 = "Mar 3, 2023";
       string title02 = "monthly Order from Al";
       string description02 = "4 loaves, 5 croissants";
-      int price02 = 9;
+      decimal price02 = 9;
       string date02 = "May 7, 2023";
       Order newOrder1 = new Order(title01, description01, price01, date01);
       Order newOrder2 = new Order(title02, description02, price02, date02);
@@ -114,7 +114,7 @@ namespace VendorAndOrderTracker.Tests
     //Arrange
     string titleTest = "Weekly Order from Anne";
       string descriptionTest = "3 loaves, 4 croissants";
-      int priceTest = 7;
+      decimal priceTest = 7;
       string dateTest = "Mar 3, 2023";
       Order testOrder = new Order(titleTest, descriptionTest, priceTest, dateTest);
 
@@ -128,11 +128,11 @@ namespace VendorAndOrderTracker.Tests
       //Arrange
       string title01 = "Weekly Order from Anne";
       string description01 = "3 loaves, 4 croissants";
-      int price01 = 7;
+      decimal price01 = 7;
       string date01 = "Mar 3, 2023";
       string title02 = "monthly Order from Al";
       string description02 = "4 loaves, 5 croissants";
-      int price02 = 9;
+      decimal price02 = 9;
       string date02 = "May 7, 2023";
 
       Order newOrder1 = new Order(title01, description01, price01, date01);
